@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "369968971590",
+    "firebase_url": "https://postkasten-4c221.firebaseio.com",
+    "project_id": "postkasten-4c221",
+    "storage_bucket": "postkasten-4c221.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:369968971590:android:c07c02d370c618aa",
+        "android_client_info": {
+          "package_name": "com.github.opticwafare.postkasten_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "369968971590-e68f399c42d69rsupnn57107090g2qvn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.github.opticwafare.postkasten_app",
+            "certificate_hash": "d3b31b1df0b1521178712060bb022f0cabac1fb7"
+          }
+        },
+        {
+          "client_id": "369968971590-fkn1a70i0d0f2a5ijiiacec475s06plh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANtKJtANJp8qA-FLZ36Iyah7NFkvxlLII"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "369968971590-fkn1a70i0d0f2a5ijiiacec475s06plh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
