@@ -8,6 +8,10 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
+
+import com.google.firebase.messaging.FirebaseMessaging;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,6 +30,20 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+        FirebaseMessaging.getInstance().unsubscribeFromTopic("postkasten");
+        FirebaseMessaging.getInstance().unsubscribeFromTopic("postkasten_offen");
+        FirebaseMessaging.getInstance().unsubscribeFromTopic("postkasten_geschlossen");
+
+        // Checkboxen aus dem Design holen
+        CheckBox checkBoxAll = (CheckBox) findViewById(R.id.checkBoxAll);
+        CheckBox checkBoxOpen = (CheckBox) findViewById(R.id.checkBoxOpen);
+        CheckBox checkBoxClose = (CheckBox) findViewById(R.id.checkBoxClose);
+
+        // Listener zu Checkboxen hinzufügen
+        checkBoxAll.setOnCheckedChangeListener(new OnNotificationCheckBoxChangeListener("postkasten"));
+        checkBoxOpen.setOnCheckedChangeListener(new OnNotificationCheckBoxChangeListener("postkasten_offen"));
+        checkBoxClose.setOnCheckedChangeListener(new OnNotificationCheckBoxChangeListener("postkasten_geschlossen"));
     }
 
     @Override
